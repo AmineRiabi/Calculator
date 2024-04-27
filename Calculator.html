@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/Calculator_logo.webp">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body >
+    <div class="wrapper">
+        <div class="header-section">
+            <div class="title">Calculator</div>
+            <div class="appearance">
+                <div class="content">
+                    <button class="btn-mode light"><ion-icon name="sunny-outline"></ion-icon></button>
+                    <button class="btn-mode active"><ion-icon name="moon-outline"></ion-icon></button>
+                </div>
+            </div>
+        </div>
+        <div class="screen">
+            <input type="text" id="reading-screen">
+            <input type="text" value="0" id="result-screen">
+        </div>
+        <div class="keyboard">
+            <div class="calc-buttons">
+                <div class="calc-button-row">
+                    <button class="calc-button orange-color clear">C</button>
+                    <button class="calc-button orange-color backspace">
+                        <ion-icon name="backspace"></ion-icon>
+                    </button>
+                    <button class="calc-button orange-color operation" data-value = "%">%</button>
+                </div>
+                <div class="calc-button-row">
+                    <button class="calc-button numbers" data-value = "7">7</button>
+                    <button class="calc-button numbers" data-value = "8">8</button>
+                    <button class="calc-button numbers" data-value = "9">9</button>
+                </div>
+                <div class="calc-button-row">
+                    <button class="calc-button numbers" data-value = "4">4</button>
+                    <button class="calc-button numbers" data-value = "5">5</button>
+                    <button class="calc-button numbers" data-value = "6">6</button>
+                </div>
+                <div class="calc-button-row">
+                    <button class="calc-button numbers" data-value = "1">1</button>
+                    <button class="calc-button numbers" data-value = "2">2</button>
+                    <button class="calc-button numbers" data-value = "3">3</button>
+                </div>
+                <div class="calc-button-row">
+                    <button class="calc-button numbers" data-value = "0">0</button>
+                    <button class="calc-button numbers" data-value = ",">,</button>
+                </div>
+            </div>
+            <div class="calc-buttons">
+                <button class="calc-button orange-color operation" data-value = "/">/</button>
+                <button class="calc-button orange-color operation" data-value = "×">×</button>
+                <button class="calc-button orange-color operation" data-value = "-">−</button>
+                <button class="calc-button orange-color operation" data-value = "+">+</button>
+                <button class="calc-button orange-background equale">=</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
